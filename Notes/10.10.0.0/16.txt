@@ -1,0 +1,328 @@
+sudo nmap -sV 10.10.0.0/16
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-01-20 16:15 GMT
+Stats: 0:00:03 elapsed; 0 hosts completed (0 up), 4096 undergoing Ping Scan
+Ping Scan Timing: About 3.04% done; ETC: 16:17 (0:01:36 remaining)
+Stats: 0:00:49 elapsed; 4071 hosts completed (25 up), 4096 undergoing Host Discovery
+Parallel DNS resolution of 1 host. Timing: About 0.00% done
+Stats: 0:01:01 elapsed; 4071 hosts completed (25 up), 25 undergoing Service Scan
+Service scan Timing: About 27.03% done; ETC: 16:17 (0:00:16 remaining)
+Stats: 0:02:29 elapsed; 4071 hosts completed (25 up), 25 undergoing Service Scan
+Service scan Timing: About 97.30% done; ETC: 16:18 (0:00:03 remaining)
+Nmap scan report for 10.10.0.1
+Host is up (0.016s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.6 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http    nginx 1.18.0 (Ubuntu)
+5000/tcp open  upnp?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port5000-TCP:V=7.94SVN%I=7%D=1/20%Time=65ABF1F5%P=x86_64-pc-linux-gnu%r
+SF:(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(GetRequest,74,"HTTP/1\.0\x20307\x20Temporary\x20Redire
+SF:ct\r\nLocation:\x20/login\?next=/\r\nDate:\x20Sat,\x2020\x20Jan\x202024
+SF:\x2016:16:54\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(RTSPRequest,67,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20
+SF:charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(
+SF:HTTPOptions,55,"HTTP/1\.0\x20204\x20No\x20Content\r\nAllow:\x20OPTIONS,
+SF:\x20GET\r\nDate:\x20Sat,\x2020\x20Jan\x202024\x2016:17:09\x20GMT\r\n\r\
+SF:n")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20t
+SF:ext/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x
+SF:20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nC
+SF:ontent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\
+SF:n\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\
+SF:nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionReq,67
+SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x2
+SF:0charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r
+SF:(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20te
+SF:xt/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x2
+SF:0Request")%r(FourOhFourRequest,9A,"HTTP/1\.0\x20404\x20Not\x20Found\r\n
+SF:Content-Type:\x20application/json;\x20charset=UTF-8\r\nDate:\x20Sat,\x2
+SF:020\x20Jan\x202024\x2016:17:25\x20GMT\r\nContent-Length:\x2024\r\n\r\n{
+SF:\"message\":\"Not\x20Found\"}\n")%r(LPDString,67,"HTTP/1\.1\x20400\x20B
+SF:ad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConne
+SF:ction:\x20close\r\n\r\n400\x20Bad\x20Request")%r(LDAPSearchReq,67,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20chars
+SF:et=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SIPOp
+SF:tions,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/p
+SF:lain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Req
+SF:uest");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.0.103
+Host is up (0.023s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6 (protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.58 ((Unix))
+
+Nmap scan report for 10.10.0.123
+Host is up (0.058s latency).
+All 1000 scanned ports on 10.10.0.123 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Nmap scan report for 10.10.10.1
+Host is up (0.016s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.6 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http    nginx 1.18.0 (Ubuntu)
+5000/tcp open  upnp?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port5000-TCP:V=7.94SVN%I=7%D=1/20%Time=65ABF1F5%P=x86_64-pc-linux-gnu%r
+SF:(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(GetRequest,74,"HTTP/1\.0\x20307\x20Temporary\x20Redire
+SF:ct\r\nLocation:\x20/login\?next=/\r\nDate:\x20Sat,\x2020\x20Jan\x202024
+SF:\x2016:16:54\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(RTSPRequest,67,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20
+SF:charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(
+SF:HTTPOptions,55,"HTTP/1\.0\x20204\x20No\x20Content\r\nAllow:\x20OPTIONS,
+SF:\x20GET\r\nDate:\x20Sat,\x2020\x20Jan\x202024\x2016:17:09\x20GMT\r\n\r\
+SF:n")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20t
+SF:ext/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x
+SF:20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nC
+SF:ontent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\
+SF:n\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\
+SF:nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionReq,67
+SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x2
+SF:0charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r
+SF:(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20te
+SF:xt/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x2
+SF:0Request")%r(FourOhFourRequest,9A,"HTTP/1\.0\x20404\x20Not\x20Found\r\n
+SF:Content-Type:\x20application/json;\x20charset=UTF-8\r\nDate:\x20Sat,\x2
+SF:020\x20Jan\x202024\x2016:17:25\x20GMT\r\nContent-Length:\x2024\r\n\r\n{
+SF:\"message\":\"Not\x20Found\"}\n")%r(LPDString,67,"HTTP/1\.1\x20400\x20B
+SF:ad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConne
+SF:ction:\x20close\r\n\r\n400\x20Bad\x20Request")%r(LDAPSearchReq,67,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20chars
+SF:et=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SIPOp
+SF:tions,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/p
+SF:lain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Req
+SF:uest");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.10.9
+Host is up (0.016s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.10.10
+Host is up (0.016s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+53/tcp open  domain  dnsmasq 2.75
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.10.11
+Host is up (0.016s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+53/tcp open  domain  dnsmasq 2.75
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.10.13
+Host is up (0.016s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  NLnet Labs NSD
+
+Nmap scan report for 10.10.10.22
+Host is up (0.016s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT    STATE SERVICE     VERSION
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+Service Info: Host: LINUXSERVER
+
+Nmap scan report for 10.10.10.24
+Host is up (0.016s latency).
+All 1000 scanned ports on 10.10.10.24 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Nmap scan report for 10.10.10.26
+Host is up (0.016s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Werkzeug/3.0.1 Python/3.8.17
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.94SVN%I=7%D=1/20%Time=65ABF1F5%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,5FC,"HTTP/1\.1\x20200\x20OK\r\nServer:\x20Werkzeug/3\.0\.1\x2
+SF:0Python/3\.8\.17\r\nDate:\x20Sat,\x2020\x20Jan\x202024\x2016:16:54\x20G
+SF:MT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:\x
+SF:201357\r\nConnection:\x20close\r\n\r\n\n\x20\x20\x20\x20<html>\n\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20<head><meta\x20charset=utf-8></meta></head>\n\
+SF:x20\x20\x20\x20\x20\x20\x20\x20<title>Powerzio\x20Intranet</title>\n\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20<style>\n\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:.header\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20line-height:\x2010rem;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20color:\x20#fff;\n\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20width:100%;\n\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#00000055;
+SF:\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20heigh
+SF:t:\x2010rem;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20padding-left:\x202rem;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\.footer\x20{\n\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x206rem;\n\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#fff;\n\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20
+SF:100%;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:background-color:\x20#00000099;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20align-text:\x20center;\n\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x206rem;\n\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-left:\x20
+SF:2rem;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\.message\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20margin:\x202rem;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\.body,\x20html\x20{\n\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2010");
+
+Nmap scan report for 10.10.10.34
+Host is up (0.017s latency).
+All 1000 scanned ports on 10.10.10.34 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Nmap scan report for 10.10.10.48
+Host is up (0.017s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Node.js Express framework
+
+Nmap scan report for 10.10.10.53
+Host is up (0.018s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 2.3.4
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.10.55
+Host is up (0.017s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Node.js Express framework
+
+Nmap scan report for 10.10.10.84
+Host is up (0.016s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.10.132
+Host is up (0.017s latency).
+All 1000 scanned ports on 10.10.10.132 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Nmap scan report for 10.10.10.216
+Host is up (0.016s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE    SERVICE  VERSION
+21/tcp   filtered ftp
+23/tcp   open     telnet?
+25/tcp   open     smtp?
+80/tcp   filtered http
+110/tcp  open     pop3?
+5555/tcp open     freeciv?
+
+Nmap scan report for 10.10.10.222
+Host is up (0.018s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.38 ((Debian))
+
+Nmap scan report for 10.10.10.223
+Host is up (0.017s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.94SVN%I=7%D=1/20%Time=65ABF1F5%P=x86_64-pc-linux-gnu%r
+SF:(NULL,6D,"i\0\0\0\n11\.2\.2-MariaDB-1:11\.2\.2\+maria~ubu2204\0'\0\0\0X
+SF:=d`87GA\0\xfe\xf7-\x02\0\xff\x81\x15\0\0\0\0\0\0\x1d\0\0\0PMsy&O=\"2tra
+SF:\0mysql_native_password\0")%r(GenericLines,A7,"i\0\0\0\n11\.2\.2-MariaD
+SF:B-1:11\.2\.2\+maria~ubu2204\0'\0\0\0X=d`87GA\0\xfe\xf7-\x02\0\xff\x81\x
+SF:15\0\0\0\0\0\0\x1d\0\0\0PMsy&O=\"2tra\0mysql_native_password\x006\0\0\x
+SF:01\xffj\x04#HY000Proxy\x20header\x20is\x20not\x20accepted\x20from\x2010
+SF:\.10\.0\.129")%r(LDAPBindReq,6D,"i\0\0\0\n11\.2\.2-MariaDB-1:11\.2\.2\+
+SF:maria~ubu2204\0:\0\0\x006z\*\]vZ@p\0\xfe\xf7-\x02\0\xff\x81\x15\0\0\0\0
+SF:\0\0\x1d\0\0\x006X8PjEWh\$tC\.\0mysql_native_password\0")%r(afp,6D,"i\0
+SF:\0\0\n11\.2\.2-MariaDB-1:11\.2\.2\+maria~ubu2204\0D\0\0\0bihM\+-A>\0\xf
+SF:e\xf7-\x02\0\xff\x81\x15\0\0\0\0\0\0\x1d\0\0\0Q_is%YrR%\]\(N\0mysql_nat
+SF:ive_password\0");
+
+Nmap scan report for 10.10.11.1
+Host is up (0.017s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.6 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http    nginx 1.18.0 (Ubuntu)
+5000/tcp open  upnp?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port5000-TCP:V=7.94SVN%I=7%D=1/20%Time=65ABF1FB%P=x86_64-pc-linux-gnu%r
+SF:(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(GetRequest,74,"HTTP/1\.0\x20307\x20Temporary\x20Redire
+SF:ct\r\nLocation:\x20/login\?next=/\r\nDate:\x20Sat,\x2020\x20Jan\x202024
+SF:\x2016:17:00\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(RTSPRequest,67,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20
+SF:charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(
+SF:HTTPOptions,55,"HTTP/1\.0\x20204\x20No\x20Content\r\nAllow:\x20OPTIONS,
+SF:\x20GET\r\nDate:\x20Sat,\x2020\x20Jan\x202024\x2016:17:16\x20GMT\r\n\r\
+SF:n")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20t
+SF:ext/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x
+SF:20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nC
+SF:ontent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\
+SF:n\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTTP/1\.1\x2040
+SF:0\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\
+SF:nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSSessionReq,67
+SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x2
+SF:0charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r
+SF:(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20te
+SF:xt/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x2
+SF:0Request")%r(FourOhFourRequest,9A,"HTTP/1\.0\x20404\x20Not\x20Found\r\n
+SF:Content-Type:\x20application/json;\x20charset=UTF-8\r\nDate:\x20Sat,\x2
+SF:020\x20Jan\x202024\x2016:17:31\x20GMT\r\nContent-Length:\x2024\r\n\r\n{
+SF:\"message\":\"Not\x20Found\"}\n")%r(LPDString,67,"HTTP/1\.1\x20400\x20B
+SF:ad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConne
+SF:ction:\x20close\r\n\r\n400\x20Bad\x20Request")%r(LDAPSearchReq,67,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20chars
+SF:et=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SIPOp
+SF:tions,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/p
+SF:lain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Req
+SF:uest");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.11.2
+Host is up (0.017s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http    nginx 1.14.0 (Ubuntu)
+8081/tcp open  http    Node.js Express framework
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.11.3
+Host is up (0.017s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 10.10.11.4
+Host is up (0.016s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.0 (protocol 2.0)
+
+Nmap scan report for 10.10.11.25
+Host is up (0.016s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))

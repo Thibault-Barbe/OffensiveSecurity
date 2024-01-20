@@ -1,0 +1,8 @@
+Nmap scan report for 10.10.0.103
+Host is up (0.023s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6 (protocol 2.0)
+80/tcp open  http    Apache httpd 2.4.58 ((Unix))
+
+nmap -p- -sV -A 10.10.0.103
